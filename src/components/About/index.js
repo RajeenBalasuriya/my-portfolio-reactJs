@@ -1,15 +1,20 @@
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
-import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import Loader from 'react-loaders';
 import Photo from '../Photo';
 import image from '../../assets/images/world.jpg'
+import { motion,AnimatePresence } from 'framer-motion';
+import Modal from '../Modal/index'
 
 
 
 const About=()=>{
     const [letterClass]=useState('text-animate')
+    const [modalOpen,setModalOpen]=useState(false);
+
+    const close=()=> setModalOpen(false);
+    const open=()=> setModalOpen(true);
  
     return(
         <>
@@ -30,11 +35,31 @@ const About=()=>{
                  I'm dedicated to building a better future for people around the world through innovation and technology.
                  </p>
                  
+                
 
-                 <Link to="/seemore" className='flat-button'>My Journy So Far</Link>
+                 
                  <Photo imageUrl={image} className={'world'} />
+                 <motion.button
+                    className='save-button'
+                    onClick={()=>(modalOpen ? close() : open()) }
+                    >
+                    My Journey so far
+                    </motion.button>
+
             </div>
-            
+            <div>
+                 
+                    <AnimatePresence
+                    initial={false}
+                    mode='wait'
+                    onExitComplete={()=>null}
+                    >
+
+                        {modalOpen && <Modal modalOpen={modalOpen} handleClose={close}/>}
+                    </AnimatePresence>
+                   
+                </div>
+                 
                 
            
 
