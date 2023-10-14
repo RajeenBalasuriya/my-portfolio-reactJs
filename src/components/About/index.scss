@@ -60,18 +60,27 @@
         top: 0;
         left: 56%;
         height: 100%;
+        width: 800px;
         margin: auto;
         padding: 0 2rem;
         border-radius: 12px;
         color: #7a0041;
-        background-color: rgba(159, 172, 172, 0.872);
-
-        .close{
-            color: aqua;
-            position: relative;
-            top: 90%;
-            left: 50%;
+        background-color: rgba(0, 0, 0, 0.872);
+        .closediv{
+                position: absolute;
+                top: 70%;
+                left: 50%;
+            .close{
+                color: rgb(255, 255, 255);
+                display: flex;
+                justify-content: center;
+                font-size: 100px;
+                background: transparent;
+                border: none;
+                transform: rotate(90deg);
+            }
         }
+        
       }
       
       .save-button{
@@ -105,5 +114,7 @@
       
       
 }
+
+
 
 

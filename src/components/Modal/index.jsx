@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import MdoalContent from '../About/AboutFirst/index'
 
 
 const dropIn={
@@ -39,12 +40,20 @@ const Modal=({handleClose,text})=>{
             animate="visible"
             exit="exit"
             >
-                <p>saaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                    saffffffffffffffffas
-                    afsssssssssssssssssssssssssssssssssssss
-                    asggggggggggggggggggggggggggggggggggg
-                </p>
-                <button onClick={handleClose} className="close">Close</button>
+                
+                
+                    <MdoalContent/>
+
+
+                <motion.div
+                
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.9 }}
+                transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                className="closediv"
+                
+                ><button onClick={handleClose} className="close">&#187;</button></motion.div>
+                
             </motion.div>
         
     )
