@@ -1,0 +1,181 @@
+.contact-page{
+    .text-zone{
+        position: absolute;
+        left: 10%;
+        top:40%;
+        transform: translateY(-50%);
+        width: 35%;
+        vertical-align: middle;
+        display: table-cell;
+        max-height: 90%;
+        animation: fadeIn 1s 1.8s backwards;
+    }
+
+    h1{
+        font-size: 60px;
+        font-family: 'CoolveticaRg-Regular';
+        color:#7a0041;
+        font-weight: 400;
+        margin-top: 0;
+        position: relative;
+        margin-bottom: 40px;
+
+
+        &::before{
+            content: '<h1>';
+            font-family:LaBelleAurore ;
+            color: rgb(205, 214, 220);
+            font-size: 18px;
+            position: absolute;
+            margin-top: -10px;
+            left:-10px;
+            opacity: 0.6;
+            line-height: 18px;
+        }
+
+        &::after{
+            content: '<h1/>';
+            font-family:LaBelleAurore ;
+            color: rgb(205, 214, 220);
+            font-size: 18px;
+            position: absolute;
+            margin-top: 80px;
+            left:220px;
+            opacity: 0.6;
+            line-height: 18px;
+        }
+    }
+
+    .details{
+        font-size: 25px;
+        text-align:justify;
+        color: aliceblue;
+        font-family: sans-serif;
+       
+    }
+
+    .contact-form {
+        position: absolute;
+        width: 35%;
+        margin-top: 20px;
+        top: 55%;
+        left: 10%;
+      
+        ul {
+          padding: 0;
+          margin: 0;
+      
+          li {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            margin-bottom: 10px;
+            opacity: 0;
+            overflow: hidden;
+            display: block;
+            clear: both;
+            position: relative;
+            animation: fadeInUp 2s 2s;
+            animation-fill-mode: forwards;
+          }
+      
+          li.half {
+            width: 49%;
+            margin-left: 2%;
+            float: left;
+            clear: none;
+      
+            &:first-child {
+              margin-left: 0;
+            }
+          }
+        }
+      
+        input[type='text'],
+        input[type='email'] {
+          width: 100%;
+          border: 0;
+          background: #49494a;
+          height: 50px;
+          font-size: 16px;
+          color: #fff;
+          padding: 0 20px;
+          box-sizing: border-box;
+        }
+      
+        textarea {
+          width: 100%;
+          border: 0;
+          background: #49494a;
+          height: 50px;
+          font-size: 16px;
+          color: #fff;
+          padding: 20px;
+          box-sizing: border-box;
+          min-height: 150px;
+        }
+        
+      
+        .flat-button {
+          color: #7a0041;
+          font-size: 15px;
+          letter-spacing: 3px;
+          text-decoration: none;
+          padding: 8px 10px;
+          border: 1px solid #7a0041;
+          float: left;
+          border-radius: 4px;
+          background: 0 0;
+          text-transform: uppercase;
+          float: right;
+          text-align: center;
+          margin-right: 10px;
+        }
+      }
+      
+      .map-wrap {
+        background: rgba(8, 253, 216, 0.1);
+        float: right;
+        width: 53%;
+        height: 100%;
+        top:40%;
+        
+        box-shadow: 0 4px 16px rgba(255, 255, 255, 1);
+        
+      }
+      
+      .leaflet-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        animation: backInRight 1s 1.2s;
+        animation-fill-mode: forwards;
+      }
+      
+      .info-map {
+        position: absolute;
+        background: #000;
+        top: 50px;
+        right: 30%;
+        z-index: 999999;
+        width: 267px;
+        padding: 20px;
+        color: #fff;
+        font-family: 'Helvetica';
+        font-size: 17px;
+        font-weight: 300;
+        opacity: 0;
+        animation: fadeIn 1s 1.5s;
+        animation-fill-mode: forwards;
+      
+        span {
+          font-size: 16px;
+      
+          span {
+            color: #ffd700;
+          }
+        }
+      }
+      
+}
