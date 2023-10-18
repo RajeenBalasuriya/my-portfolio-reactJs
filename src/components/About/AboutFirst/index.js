@@ -44,7 +44,7 @@ const Hello = () => {
   };
 
   useEffect(() => {
-    const interval = setInterval(updateContent, 14000);
+    const interval = setInterval(updateContent, 3000);
 
     return () => clearInterval(interval);
   }, []);
