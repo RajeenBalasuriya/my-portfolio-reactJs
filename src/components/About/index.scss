@@ -47,10 +47,11 @@
     }
 
     .details{
-        font-size: 25px;
+        font-size: 20px;
         text-align:justify;
         color: aliceblue;
         font-family: sans-serif;
+        margin-right: 5%;
        
     }
 
@@ -68,7 +69,7 @@
         background-color: rgba(0, 0, 0, 0.872);
         .closediv{
                 position: absolute;
-                top: 70%;
+                top: 90%;
                 left: 50%;
             .close{
                 color: rgb(255, 255, 255);
