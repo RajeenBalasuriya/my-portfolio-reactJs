@@ -352,3 +352,66 @@
 }
   
 }
+
+
+@media (max-width: 375px) {
+
+
+  .contact-page{
+    
+    .text-zone{
+        position: absolute;
+        left: 20%;
+        top:20%;
+        transform: translateY(-50%);
+        width: 35%;
+        vertical-align: middle;
+        display: table-cell;
+        max-height: 90%;
+        animation: fadeIn 1s 1.8s backwards;
+    }
+
+ 
+
+    .contact-form {
+        
+        ul {
+          
+          margin-top: 8px;
+          width: 200px;
+
+          
+      
+          li {
+            margin-bottom: 3px;
+            opacity: 0;
+            
+          }
+      
+        
+        }
+      
+       
+      
+        
+      
+      
+      }
+      
+      .map-wrap {
+       
+        top: 60%;
+        
+        
+      }
+      
+     
+      
+      
+}
+
+  
+}
+
+     
+    

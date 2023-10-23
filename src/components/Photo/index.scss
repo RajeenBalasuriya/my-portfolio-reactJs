@@ -46,14 +46,22 @@
 
     .photo-container{
         position: relative;
-        width: 60px;
-        height: 20px;
-        left: -250px;
+       
+        left: 0px;
         z-index: -2;
-        opacity: 0.3;
-        top: 250px;
-        
-    }
+        opacity: 1;
+        top: 350px;
+
+        .profile-photo{
+            width: 400px;
+            
+
+        }}
+
+
+    
+
+  
 
   
     .page{
@@ -73,6 +81,52 @@
     
       
     }
+
+
+
+@media (max-width: 375px) {
+
+    .photo-container{
+        position: relative;
+       
+        left: 80px;
+        z-index: -2;
+        opacity: 1;
+        top: 300px;
+
+        .profile-photo{
+            width: 300px;
+            
+            
+
+        }}
+
+
+    
+
+  
+
+  
+    .page{
+          overflow: hidden;
+        }
+
+
+
+    .world{
+        width: 200px;
+        height: 20px;
+        top: -20%;
+        left: 20%;
+    }    
+     
+    
+    
+      
+    }
+
+
+ 
 
 
 
