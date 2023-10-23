@@ -42,6 +42,41 @@
 
 
 
+@media (max-width: 768px) {
+
+    .photo-container{
+        position: relative;
+        width: 60px;
+        height: 20px;
+        left: -250px;
+        z-index: -2;
+        opacity: 0.3;
+        top: 250px;
+        
+    }
+
+  
+    .page{
+          overflow: hidden;
+        }
+
+
+
+    .world{
+        width: 200px;
+        height: 20px;
+        top: -20%;
+        left: 20%;
+    }    
+     
+    
+    
+      
+    }
+
+
+
+
 
 
 

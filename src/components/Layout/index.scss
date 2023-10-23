@@ -23,7 +23,7 @@
 
 .bottom-tag-html{
 
-    margin-left: -70px;
+    margin-left: -90px;
 }
 
 .container{
@@ -40,4 +40,27 @@
     animation:fadeIn 1s forwards;
     animation-delay: 1s;
 }
+
+@media (max-width: 768px) {
+
+    .top-tags{
+        bottom: auto;
+        top: 80px;
+        
+
+    }
+    
+    .tags{
+       
+        bottom: 180px;
+        left: 12px;
+        font-size: 13px;
+          
+    }
+    
+    
+   
+}
+
+
 

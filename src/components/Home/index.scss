@@ -95,3 +95,79 @@ h2{
   
 }
 
+
+
+@media (max-width: 768px) {
+
+    .home-page{
+
+   
+
+        .text-zone{
+            top: 30%;
+        }
+    
+        
+        h1{
+            font-size: 25px;
+            margin: 0;
+            width: 200%;
+            
+            
+            
+    
+            &::before{
+                
+                font-size: 15px;
+                position: absolute;
+                margin-top: -20px;
+                left: -20px;
+                
+            }
+    
+            &::after{
+                
+                font-size: 15px;
+              
+            }
+            img{
+                width: 60px;
+                
+            }
+        }
+    
+    
+    }
+    
+    h2{
+        
+        margin-top: 15px;
+        font-size: 8px;
+        
+    }
+    
+    .flat-button{
+        
+        font-size: 8px;
+        margin-left: 0px;
+        
+        
+        &:hover{
+            background: #4b0028;
+            color: aliceblue;
+            
+            border-radius: 10px;
+        }
+
+
+   
+    
+    
+      
+    }
+    
+    
+
+   
+  }
+

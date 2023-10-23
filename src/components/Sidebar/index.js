@@ -9,6 +9,8 @@ import {motion} from 'framer-motion'
 
 const Sidebar=()=>(
 
+    <>
+
     <motion.div className='nav-bar' 
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -62,6 +64,67 @@ const Sidebar=()=>(
 
 
     </motion.div>
+
+
+
+    < motion.div className='mobile-menu'
+    initial={{ x: 400 }}      
+    animate={{ x: 0 }} 
+    transition={{ delay: 1, duration: 4 }}
+    
+    >
+
+        
+
+        <nav className='menu-content'>
+        <NavLink exact="true" activeclassname="active" to='/'>
+
+            <FontAwesomeIcon icon={faHome} color='#4d4d4d4e'/>
+
+        </NavLink>
+
+        <NavLink exact="true" activeclassname="active" className="about-link" to='/about'>
+
+            <FontAwesomeIcon icon={faUser} color='#4d4d4d4e'/>
+
+        </NavLink>
+
+        <NavLink exact="true" activeclassname="active" className="contact-link" to='/contact'>
+
+            <FontAwesomeIcon icon={faEnvelope} color='#4d4d4d4e'/>
+
+        </NavLink>
+
+
+
+        
+    <ul>
+        <li>
+            <a target='_blank' rel='noreferrer' href='https://www.linkedin.com/in/rajeen-balasuriya-61b93a243/'>
+                <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e"/>
+            </a>
+        </li>
+
+        <li>
+            <a target='_blank' rel='noreferrer' href='https://github.com/RajeenBalasuriya'>
+                <FontAwesomeIcon icon={faGithub} color="#4d4d4e"/>
+            </a>
+        </li>
+    </ul>
+
+
+
+    </nav>
+
+            
+
+
+    </motion.div>
+
+    </>
+
+
+
 
 )
 

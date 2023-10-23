@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import MdoalContent from '../About/AboutFirst/index'
 
 
+
 const dropIn={
     hidden:{
         y:'-100vh',

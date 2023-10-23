@@ -117,5 +117,67 @@
 }
 
 
+@media (max-width: 768px) {
+
+
+    .about-page{
+
+
+        
+        .text-zone{
+            
+            left: 10%;
+            top:40%;
+            width: 45%;
+           
+            
+        }
+
+        h1{
+            font-size: 33px;
+            margin-bottom: 10px;
+    
+    
+            &::before{
+                content: '<h1>';
+                font-size: 14px;
+               
+            }
+    
+            &::after{
+    
+                font-size: 14px;
+                position: absolute;
+                margin-top: 33px;
+                left:130px;
+                
+            }
+        }
+    
+        .details{
+            font-size: 13px;
+            
+            color: aliceblue;
+            
+            margin-right: 5%;
+
+            margin-top: 10%;
+           
+        }
+
+        .save-button{
+            
+            font-size: 10px;
+            margin-left: 20px;
+    
+    
+
+    }
+}
+
+
+}
+
+
 
 

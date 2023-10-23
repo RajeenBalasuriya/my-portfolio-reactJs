@@ -179,3 +179,176 @@
       }
       
 }
+
+@media (max-width: 768px) {
+
+
+
+  .contact-page{
+    
+    .text-zone{
+        position: absolute;
+        left: 20%;
+        top:21%;
+        transform: translateY(-50%);
+        width: 35%;
+        vertical-align: middle;
+        display: table-cell;
+        max-height: 90%;
+        animation: fadeIn 1s 1.8s backwards;
+    }
+
+    h1{
+        font-size: 20px;
+        font-family: 'CoolveticaRg-Regular';
+        color:#7a0041;
+        font-weight: 400;
+        margin-top: 0;
+        position: relative;
+        margin-bottom: 40px;
+
+
+        &::before{
+            content: '<h1>';
+            font-family:LaBelleAurore ;
+            color: rgb(205, 214, 220);
+            font-size: 9px;
+            position: absolute;
+            margin-top: -10px;
+            left:-10px;
+            opacity: 0.6;
+            line-height: 9px;
+        }
+
+        &::after{
+            content: '<h1/>';
+            font-family:LaBelleAurore ;
+            color: rgb(205, 214, 220);
+            font-size: 9px;
+            position: absolute;
+            margin-top: 20px;
+            left:110px;
+            opacity: 0.6;
+            line-height: 18px;
+        }
+    }
+
+    .details{
+        font-size: 12px;
+        width:200px;
+        text-align:justify;
+        color: aliceblue;
+        font-family: sans-serif;
+       
+    }
+
+    .contact-form {
+        position: absolute;
+        width: 52%;
+        margin-top: 20px;
+        top: 30%;
+        left: 20%;
+      
+        ul {
+          padding: 0;
+          margin: 0;
+
+          
+      
+          li {
+            margin-bottom: 3px;
+            opacity: 0;
+            
+          }
+      
+        
+        }
+      
+        input[type='text'],
+        input[type='email'] {
+          width: 100%;
+          border: 0;
+          background: #49494a;
+          height: 30px;
+          font-size: 9px;
+          color: #fff;
+          padding: 0 20px;
+          box-sizing: border-box;
+        }
+      
+        textarea {
+          width: 100%;
+          border: 0;
+          background: #49494a;
+          height: 30px;
+          font-size: 9px;
+          color: #fff;
+          padding: 20px;
+          box-sizing: border-box;
+          min-height: 20px;
+        }
+        
+      
+        .flat-button {
+        
+          font-size: 7px;
+          letter-spacing: 2px;
+          margin: 0;
+         
+        }
+      }
+      
+      .map-wrap {
+        position: absolute;
+        background: rgba(63, 66, 66, 0.1);
+        float: center;
+        width: 80%;
+        height: 20%;
+        top: 55%;
+        left:40px;
+        z-index: -5;
+        
+        box-shadow: 0 4px 16px #7a0041;
+        
+      }
+      
+      .leaflet-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        animation: backInRight 1s 1.2s;
+        animation-fill-mode: forwards;
+      }
+      
+      .info-map {
+
+        //sda
+        display:none;
+        position: absolute;
+        background: #000;
+        top: 50px;
+        right: 30%;
+        z-index: 999999;
+        width: 267px;
+        padding: 20px;
+        color: #fff;
+        font-family: 'Helvetica';
+        font-size: 17px;
+        font-weight: 300;
+        opacity: 0;
+        animation: fadeIn 1s 1.5s;
+        animation-fill-mode: forwards;
+      
+        span {
+          font-size: 16px;
+      
+          span {
+            color: #ffd700;
+          }
+        }
+      }
+      
+}
+  
+}

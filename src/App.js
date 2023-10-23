@@ -5,6 +5,7 @@ import Home from './components/Home'
 import About from './components/About'
 import Hello from './components/Hello'
 import Contact from './components/Contact'
+import MobileAbout from './components/MobileAbout'
 
 
 
@@ -18,6 +19,7 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="hello" element={<Hello />} />
           <Route path="contact" element={<Contact/>} />
+          <Route path='separate-page' element={<MobileAbout/>}/>
         </Route>
 
 

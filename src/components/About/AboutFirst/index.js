@@ -4,14 +4,13 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const imageList = [
-  require('../../../assets/images/Ananda_Crest1.png'),
+  require('../../../assets/images/Ananda_Crest1.jpg'),
   require('../../../assets/images/bc1.jpg'),
   require('../../../assets/images/iit.png'),
 ];
 
 const paraList = [
-  // Your paragraphs here
-  // Make sure the number of paragraphs matches the number of images in imageList
+  
   `
   I attended Ananda College from 2018 to 2020, where I completed my GCE A/L examinations in the physical sciences and achieved three C passes. 
   Beyond my academic pursuits, I also served as a board member of the Ananda College Saukyadana Unit.
@@ -59,9 +58,13 @@ const Hello = () => {
           exit={{ opacity: 0 }}
           transition={{ duration: 1 }}
         >
-          <Photo imageUrl={imageList[currentImageIndex]} className={'aboutFirst'} />
+
+          <div className='school'><Photo imageUrl={imageList[currentImageIndex]} className={'aboutFirst'} /></div>
+
+          
           <div key={currentParaIndex} className="paragraph">
-                    {paraList[currentParaIndex]}
+                    <div className='rt'>{paraList[currentParaIndex]}</div>
+                    
           </div>
 
         </motion.div>

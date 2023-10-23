@@ -6,11 +6,46 @@
     }
     
     .paragraph {
-        font-size: 25px;
+        font-size: 18px;
         text-align:justify;
-        color: aliceblue;
+        color: rgb(255, 255, 255);
         font-family: sans-serif;
         margin-top: 50%;
       
     }
   }
+
+
+  @media (max-width: 768px) {
+
+  
+   .rt{
+    color: rgb(251, 251, 251);
+    font-size: 15px;
+    position: absolute;
+    bottom: 25%;
+    padding: 15px;
+   }
+
+   .school{
+    
+
+    .profile-photo{
+    width: 150px;
+    height: auto;
+    position: relative;
+    bottom: -150px;
+    left: -20%;
+
+
+    }
+   }
+
+
+    
+  
+
+    
+   
+  }
+
